@@ -1,38 +1,250 @@
 <!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Bryan Taylor</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 700px;
-      margin: 60px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-    }
-    h1 { font-size: 32px; }
-    h2 { margin-top: 40px; }
-    a { text-decoration: none; color: blue; }
-  </style>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bryan Taylor | Resume</title>
+    <meta name="description" content="Bryan Taylor — Resume, contact, and references." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<h1>Bryan Taylor</h1>
-<p><strong>Infrastructure & Technology Consultant</strong></p>
+  <body>
+    <main class="page">
+      <!-- Header -->
+      <header class="card header">
+        <div class="header-left">
+          <div class="avatar" aria-hidden="true"></div>
+          <div class="header-text">
+            <h1>Bryan Taylor</h1>
+            <p class="muted">
+              Full-Stack Developer • (Your tagline here) • (City, State)
+            </p>
+          </div>
+        </div>
 
-<h2>About</h2>
-<p>I design and implement modern infrastructure, systems, and technology solutions focused on long-term scalability and performance.</p>
+        <div class="header-right">
+          <a class="btn" href="#contact">Contact</a>
+          <a class="btn btn-ghost" href="#resume">Resume</a>
+        </div>
+      </header>
 
-<h2>Projects</h2>
-<ul>
-  <li>Project One – Brief description</li>
-  <li>Project Two – Brief description</li>
-  <li>Project Three – Brief description</li>
-</ul>
+      <!-- Top grid -->
+      <section class="grid-2">
+        <section class="card" id="resume">
+          <h2>Resume Snapshot</h2>
+          <p class="muted">
+            Replace this with a 3–5 sentence summary of what you do, what you’re best at,
+            and the kind of roles you want.
+          </p>
 
-<h2>Contact</h2>
-<p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+          <div class="chips">
+            <span class="chip">Next.js</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">React</span>
+            <span class="chip">Node</span>
+            <span class="chip">Postgres</span>
+            <span class="chip">AWS</span>
+          </div>
 
-</body>
+          <div class="divider"></div>
+
+          <div class="kv">
+            <div class="kv-item">
+              <div class="k">Current Focus</div>
+              <div class="v">(e.g., building scalable web apps)</div>
+            </div>
+            <div class="kv-item">
+              <div class="k">Open To</div>
+              <div class="v">(Full-time • Contract • Freelance)</div>
+            </div>
+            <div class="kv-item">
+              <div class="k">Availability</div>
+              <div class="v">(Immediately / Date)</div>
+            </div>
+            <div class="kv-item">
+              <div class="k">Preferred Stack</div>
+              <div class="v">(Next.js • TS • Postgres • Vercel)</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Highlights</h2>
+          <ul class="list">
+            <li><strong>Impact:</strong> Shipped (project) improving (metric) by (X%).</li>
+            <li><strong>Systems:</strong> Built APIs/auth/data flows for (use case).</li>
+            <li><strong>UI:</strong> Designed clean UIs with reusable components.</li>
+            <li><strong>Ops:</strong> Deployed to Vercel/AWS with CI/CD.</li>
+          </ul>
+
+          <div class="divider"></div>
+
+          <h3>Links</h3>
+          <div class="links">
+            <a class="link" href="#" target="_blank" rel="noreferrer">GitHub (placeholder)</a>
+            <a class="link" href="#" target="_blank" rel="noreferrer">LinkedIn (placeholder)</a>
+            <a class="link" href="#" target="_blank" rel="noreferrer">Project / Portfolio (placeholder)</a>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Put resume.pdf in the same folder and set href="resume.pdf" -->
+          <a class="btn-wide" href="#" download>Download PDF Resume (placeholder)</a>
+          <p class="tiny muted">
+            Tip: add a <code>resume.pdf</code> next to this file and set the link to <code>resume.pdf</code>.
+          </p>
+        </section>
+      </section>
+
+      <!-- Experience -->
+      <section class="card">
+        <h2>Experience</h2>
+
+        <div class="timeline">
+          <article class="role">
+            <div class="role-top">
+              <div>
+                <div class="role-title">Senior Developer (Placeholder)</div>
+                <div class="role-meta">Company • Location</div>
+              </div>
+              <div class="role-dates">2023 — Present</div>
+            </div>
+            <ul class="list">
+              <li>Built (feature/system) using (tech) to achieve (result).</li>
+              <li>Led (initiative) and collaborated with (team).</li>
+              <li>Improved performance by (X%) via (approach).</li>
+            </ul>
+          </article>
+
+          <article class="role">
+            <div class="role-top">
+              <div>
+                <div class="role-title">Full-Stack Developer (Placeholder)</div>
+                <div class="role-meta">Company • Location</div>
+              </div>
+              <div class="role-dates">2021 — 2023</div>
+            </div>
+            <ul class="list">
+              <li>Delivered (product) from 0→1 with modern web stack.</li>
+              <li>Designed database schemas and APIs (SQL/ORM).</li>
+              <li>Owned deployments, monitoring, and releases.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills + Education -->
+      <section class="grid-2">
+        <section class="card">
+          <h2>Skills</h2>
+
+          <div class="skill-grid">
+            <div class="skill-box">
+              <div class="k">Frontend</div>
+              <div class="v">React • Next.js • TypeScript • CSS</div>
+            </div>
+            <div class="skill-box">
+              <div class="k">Backend</div>
+              <div class="v">Node • APIs • Auth • SQL</div>
+            </div>
+            <div class="skill-box">
+              <div class="k">Data</div>
+              <div class="v">Postgres • Prisma • Redis</div>
+            </div>
+            <div class="skill-box">
+              <div class="k">DevOps</div>
+              <div class="v">Vercel • Docker • AWS (placeholder)</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Education & Certifications</h2>
+
+          <div class="edu">
+            <div class="edu-item">
+              <div class="role-title">Degree / Program (Placeholder)</div>
+              <div class="muted tiny">School • Year</div>
+            </div>
+            <div class="edu-item">
+              <div class="role-title">Certification (Placeholder)</div>
+              <div class="muted tiny">Issuer • Year</div>
+            </div>
+            <div class="edu-item">
+              <div class="role-title">Certification (Placeholder)</div>
+              <div class="muted tiny">Issuer • Year</div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- References + Contact -->
+      <section class="grid-2">
+        <section class="card">
+          <h2>References</h2>
+          <p class="muted">Use placeholders here and swap later.</p>
+
+          <div class="refs">
+            <div class="ref-card">
+              <div class="role-title">Reference Name</div>
+              <div class="muted tiny">Title • Company</div>
+              <div class="muted tiny">email@domain.com • (000) 000-0000</div>
+            </div>
+            <div class="ref-card">
+              <div class="role-title">Reference Name</div>
+              <div class="muted tiny">Title • Company</div>
+              <div class="muted tiny">email@domain.com • (000) 000-0000</div>
+            </div>
+            <div class="ref-card">
+              <div class="role-title">Reference Name</div>
+              <div class="muted tiny">Title • Company</div>
+              <div class="muted tiny">email@domain.com • (000) 000-0000</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" id="contact">
+          <h2>Contact</h2>
+
+          <div class="contact-row">
+            <div class="contact-label">Email</div>
+            <a class="contact-value" href="mailto:you@email.com">you@email.com</a>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-label">Phone</div>
+            <a class="contact-value" href="tel:+10000000000">+1 (000) 000-0000</a>
+          </div>
+
+          <div class="contact-row">
+            <div class="contact-label">Location</div>
+            <div class="contact-value">(City, State)</div>
+          </div>
+
+          <div class="divider"></div>
+
+          <h3>Message</h3>
+          <p class="tiny muted">
+            Placeholder form. If you want it to actually send, use Formspree / Resend / an API endpoint.
+          </p>
+
+          <form class="form" onsubmit="event.preventDefault()">
+            <input class="input" placeholder="Your name" />
+            <input class="input" placeholder="Your email" />
+            <textarea class="input textarea" placeholder="Your message"></textarea>
+            <button class="btn-wide" type="submit">Send (placeholder)</button>
+          </form>
+        </section>
+      </section>
+
+      <footer class="footer">
+        <div class="muted tiny">© <span id="year"></span> Bryan Taylor • bryantaylor.dev</div>
+        <div class="muted tiny">Single-page resume • Static site</div>
+      </footer>
+    </main>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
